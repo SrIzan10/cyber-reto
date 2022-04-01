@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <style>.hidden{
+        display : none;
+        }</style>
+        <script>
+            function showhide() {
+  var div = document.getElementById("newpost");
+  div.classList.toggle('hidden'); 
+}
+        </script>
+</head>
+<body>
+    <h1>Bien, lo has conseguido.</h1>
+    <p>Aquí va la otra pista.</p>
+    <p>Izan todo de código abierto tendrá,<br>en Github todo estará,<br>y la flag encontrarás</p>
+    <a href="https://github.srizan.ml">por si no sabes mi github jeje</a><br><br>
+<div id="newpost"  class="hidden">
+    <p>Está debajo del "sobre mí"</p>
+  </div>
+  <button id="button" onclick="showhide()">Pista (no revelar si no es necesario, eso será reconocido como trampa.)</button>
+</body>
+</html>
